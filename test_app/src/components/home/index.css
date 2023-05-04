@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button.navbar-toggler {
+    display: none;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.navbar {
+    padding: 0;
+    height: 122px;
+}
+.navigation, .rt-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.navigation li{
+    margin-right: 2.083vw;
+}
+.navigation li:last-child{
+    margin-right: 0;
+}
+.navigation li .nav-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.833vw;
+    line-height: 1.146vw;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #3D474D;
+}
+.rt-navigation ul li{
+    display: flex;
+    align-items: center;
+}
+.rt-navigation ul li:last-child a{
+    border: 1px solid #FF9001;
+    border-radius: 0.208vw;
+    padding: 0.521vw 1.302vw;
+}
+.rt-navigation ul li a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 1.146vw;
+    color: #3D474D;
+    padding:0 0.833vw;
+}
+.rt-navigation ul li .lang-link{
+    display: flex;
+    align-items: center;
+    border-right:1px solid #3D474D ;
+}
+.rt-navigation ul li .lang-link img {
+    max-width: 1.250vw;
+    margin-right: 0.208vw;
+}
+.hero-banner{
+    margin-top: 6.250vw;
+    position: relative;
+}
+.hero-banner .leftpan {
+    max-width: 33.594vw;
+}
+.hero-banner .leftpan .review-rating img{
+    max-width: 0.990vw;
+}
+.hero-banner .leftpan .review-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.625vw;
+    line-height: 0.833vw;
+    color: #808080;
+    margin-left: 0.417vw;
+}
+.hero-banner .leftpan .main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.750vw;
+    line-height: 3.750vw;
+    letter-spacing: -0.03em;
+    color: #3D474D;
+    margin: 1.250vw 0 48px;
+}
+.hero-banner .leftpan .main-title span{
+    color: #FF9001;
+}
+.hero-banner .leftpan .para-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.833vw;
+    line-height: 1.146vw;
+    color: #3D474D;
+    max-width: 30.052vw;
+}
+.hero-banner .demo-sec{
+    margin-bottom: 5.885vw;
+}
+.hero-banner .demo-sec p {
+    max-width: 8.854vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.729vw;
+    line-height: 0.990vw;
+    text-transform: capitalize;
+    color: #3D474D;
+    border-left: 1px solid #FF9001;
+    padding-left: 0.729vw;
+    margin: 0 1.563vw 0 0;
+}
+.demo-btn{    
+    border: 1px solid #FF9001;
+    background-color: #FF9001;
+    border-radius: 0.208vw;
+    padding: 0.521vw 1.302vw;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938vw;
+    line-height: 1.667vw;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.demo-btn:hover{
+    border: 1px solid #FF9001;
+    color: #3D474D;
+}
+.hero-banner .log-sec {
+    justify-content: space-between;
+    max-width: 21.719vw;
+}
+.hero-banner .log-sec img {
+    max-width: 5.208vw;
+}
+.hero-banner .rightpan {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.hero-banner .rightpan img{
+    max-width:34.375vw;
+}
+@media (max-width:767px){
+    button.navbar-toggler {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+}
