@@ -5,13 +5,43 @@ body{
 a{
     text-decoration: none;
 }
-button.navbar-toggler {
-    display: none;
-}
 img{
     max-width: 100%;
     width: 100%;
 }
+/* Buttons */
+button.navbar-toggler {
+    display: none;
+}
+.choose-btn {
+    border: 1px solid #3D474D;
+    border-radius: 12px;
+    padding: 11px 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3D474D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.8px;
+    line-height: 17px;
+}
+.demo-btn{    
+    border: 1px solid #FF9001;
+    background-color: #FF9001;
+    border-radius: 0.208vw;
+    padding: 0.521vw 1.302vw;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.938vw;
+    line-height: 1.667vw;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.demo-btn:hover{
+    border: 1px solid #FF9001;
+    color: #3D474D;
+}
+/* Header CSS */
 .navbar {
     padding: 0;
     height: 122px;
@@ -67,6 +97,9 @@ img{
 .hero-banner{
     margin-top: 6.250vw;
     position: relative;
+    min-height: 32.813vw;
+    display: flex;
+    align-items: center;
 }
 .hero-banner .leftpan {
     max-width: 33.594vw;
@@ -117,22 +150,6 @@ img{
     padding-left: 0.729vw;
     margin: 0 1.563vw 0 0;
 }
-.demo-btn{    
-    border: 1px solid #FF9001;
-    background-color: #FF9001;
-    border-radius: 0.208vw;
-    padding: 0.521vw 1.302vw;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.938vw;
-    line-height: 1.667vw;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-.demo-btn:hover{
-    border: 1px solid #FF9001;
-    color: #3D474D;
-}
 .hero-banner .log-sec {
     justify-content: space-between;
     max-width: 21.719vw;
@@ -148,6 +165,112 @@ img{
 }
 .hero-banner .rightpan img{
     max-width:34.375vw;
+}
+/* Operator CSS */
+.operator-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6.458vw;
+}
+.operator-slider .row {
+    justify-content: space-between;
+}
+.operator-slider .main-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.500vw;
+    line-height: 3.750vw;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #3D474D;
+    max-width: 762px;
+}
+.operator-slider .main-title span{
+    color: #FF9001;
+}
+.operator-slider .inner-para {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.729vw;
+    line-height: 0.990vw;
+    text-align: right;
+    text-transform: capitalize;
+    width: 15.677vw;
+    color: #3D474D;
+    border-right: 1px solid #FF9001;
+    padding-right: 0.729vw;
+}
+/* Logo Gallery CSS */
+.logo-gallery{
+    margin-top:4.688vw;
+    margin-bottom: 4.167vw;
+}
+.logo-gallery .main-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.833vw;
+    line-height: 1.042vw;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #3D474D;
+}
+.logo-gallery .gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25vw;
+}
+/* Operational CSS */
+.operational .main-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.500vw;
+    line-height: 3.750vw;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #3D474D;
+    margin: auto auto 4.427vw;
+    max-width: 44.375vw;
+}
+.operational .side-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51.2px;
+    line-height: 61px;
+    color: #3D474D;
+    margin-top: 2.292vw;
+    margin-bottom: 1.042vw;
+}
+.operational .side-title span{
+    color: #F5C252;
+}
+.operational .para-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #3D474D;
+    margin-bottom: 1.250vw;
+    max-width: 25.521vw;
+}
+.operational  ul{
+    list-style: none;
+    padding: 0;
+}
+.operational  ul li{
+    display: flex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D474D;
+    margin-bottom: 0.833vw;
+}
+.operational  ul li img{
+    max-width: 16px;
+    margin-right: 0.938vw;
 }
 @media (max-width:767px){
     button.navbar-toggler {

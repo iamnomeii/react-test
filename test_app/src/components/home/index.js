@@ -5,6 +5,14 @@ import star from '../../assets/images/star.svg';
 import logoipsum1 from '../../assets/images/logoipsum1.svg';
 import logoipsum2 from '../../assets/images/logoipsum2.svg';
 import logoipsum3 from '../../assets/images/logoipsum3.svg';
+import gallerylogo1 from '../../assets/images/gallerylogo1.svg';
+import gallerylogo2 from '../../assets/images/gallerylogo2.svg';
+import gallerylogo3 from '../../assets/images/gallerylogo3.svg';
+import gallerylogo4 from '../../assets/images/gallerylogo4.svg';
+import gallerylogo5 from '../../assets/images/gallerylogo5.svg';
+import operational from '../../assets/images/operational.svg';
+import checksolid from '../../assets/images/check-solid.svg';
+import SimpleSlider from '../slider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -62,6 +70,7 @@ function Home() {
           </div>
         </nav>
       </header>
+      {/* Hero Banner */}
       <section className='hero-banner'>
         <div className='container'>
           <div className='row align-items-center'>
@@ -96,6 +105,65 @@ function Home() {
             <div className='col-md-6 p-0'>
               <div className='rightpan text-end'>
                 <img src={heroframe} alt='logo' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Slider Section */}
+      <div className='operator-slider'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <h2 className='main-title'>Designed by operators, built by <span>entrepreneurs...</span></h2>
+            <p className='inner-para'>The Eazio platform is an easy-to-use system offering a slick and modern user interface.</p>
+          </div>
+        </div>
+      </div>
+      {/* Slider Component */}
+      <SimpleSlider></SimpleSlider>
+      {/* Logo Gallery */}
+      <section className='logo-gallery'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <h2 className='main-title'>TRUSTED BY startups and large enterprises</h2>
+              <div className='gallery'>
+                <img src={gallerylogo1} alt='gallerylogo1' />
+                <img src={gallerylogo2} alt='gallerylogo2' />
+                <img src={gallerylogo3} alt='gallerylogo3' />
+                <img src={gallerylogo4} alt='gallerylogo4' />
+                <img src={gallerylogo5} alt='gallerylogo5' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Operational */}
+      <section className='operational'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <h2 className='main-title'>Goodbye to Operational Headaches, Hello to a Smooth & Easy Solution</h2>
+            </div>
+            <div className='row align-items-center'>
+              <div className='col-md-6'>
+                <img src={operational} alt='operational' />
+              </div>
+              <div className='col-md-6'>
+                <div className='rightpan'>
+                  <button type='button' className='btn choose-btn'>why choose us</button>
+                  <h3 className='side-title'><span>Human Resource</span> Management System</h3>
+                  <p className='para-title'>
+                    Including on/off-boarding, payroll, leave management, benefits, 
+                    employee development, performance, and wellness.
+                  </p>
+                  <ul>
+                    <li><img src={checksolid} alt='checksolid' /> This is some text inside of a div.</li>
+                    <li><img src={checksolid} alt='checksolid' /> This is some text inside of a div.</li>
+                    <li><img src={checksolid} alt='checksolid' /> This is some text inside of a div.</li>
+                    <li><img src={checksolid} alt='checksolid' /> This is some text inside of a div.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
