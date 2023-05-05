@@ -1,75 +1,28 @@
-import logo from '../../logo.svg';
-import lang from '../../assets/images/lang.svg';
 import heroframe from '../../assets/images/hero-frame.svg';
 import star from '../../assets/images/star.svg';
 import logoipsum1 from '../../assets/images/logoipsum1.svg';
 import logoipsum2 from '../../assets/images/logoipsum2.svg';
 import logoipsum3 from '../../assets/images/logoipsum3.svg';
-import gallerylogo1 from '../../assets/images/gallerylogo1.svg';
-import gallerylogo2 from '../../assets/images/gallerylogo2.svg';
-import gallerylogo3 from '../../assets/images/gallerylogo3.svg';
-import gallerylogo4 from '../../assets/images/gallerylogo4.svg';
-import gallerylogo5 from '../../assets/images/gallerylogo5.svg';
 import operational from '../../assets/images/operational.svg';
 import checksolid from '../../assets/images/check-solid.svg';
+import user1 from '../../assets/images/user1.svg';
+import countericon from '../../assets/images/counter-icon.svg';
+import arrowright from '../../assets/images/arrow-right.svg';
+import grosssalary from '../../assets/images/gross-salary.svg';
+import jobstatistics from '../../assets/images/job-statistics.svg';
+import Header from '../header';
+import Footer from '../footer';
 import SimpleSlider from '../slider';
+import Gallery from '../gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 function Home() {
-  // Navigation
-  const shoot = () =>  {
-    var toggle = document.getElementById('navigation');
-    if (toggle.style.display === 'none') {
-      toggle.style.display = 'block';
-    } else {
-      toggle.style.display = 'none';
-    }
-  }
   return (
     <div className='page-content'>
       {/* Navigation */}
-      <header className='home-header'>
-        <nav className='navbar'>
-          <div className='container'>
-            <a className='navbar-brand' href='#'>
-              <img src={logo} className='site-logo' alt='logo' />
-            </a>
-            <button onClick={shoot} className='navbar-toggler' type='button'>
-              <span className='navbar-toggler-icon'></span>
-            </button>
-            <ul id='navigation' className='navigation'>
-              <li>
-                <a className='nav-link' href=''>About</a>
-              </li>
-              <li>
-                <a className='nav-link' href=''>Careers</a>
-              </li>
-              <li>
-                <a className='nav-link' href=''>Pricing</a>
-              </li>
-              <li>
-                <a className='nav-link' href=''>Features</a>
-              </li>
-            </ul>
-            <div className='rt-navigation'>
-              <ul>
-                  <li>
-                    <a href='#' className='lang-link'>
-                      <img src={lang} alt='lang' /> <span>English</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' className='nav-link'>Log In</a>
-                  </li>
-                  <li>
-                    <a href='#' className='nav-link'>Get Demo</a>
-                  </li>
-              </ul>
-          </div>
-          </div>
-        </nav>
-      </header>
+      <Header></Header>
+
       {/* Hero Banner */}
       <section className='hero-banner'>
         <div className='container'>
@@ -110,6 +63,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       {/* Slider Section */}
       <div className='operator-slider'>
         <div className='container'>
@@ -119,25 +73,13 @@ function Home() {
           </div>
         </div>
       </div>
+
       {/* Slider Component */}
       <SimpleSlider></SimpleSlider>
+
       {/* Logo Gallery */}
-      <section className='logo-gallery'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-12'>
-              <h2 className='main-title'>TRUSTED BY startups and large enterprises</h2>
-              <div className='gallery'>
-                <img src={gallerylogo1} alt='gallerylogo1' />
-                <img src={gallerylogo2} alt='gallerylogo2' />
-                <img src={gallerylogo3} alt='gallerylogo3' />
-                <img src={gallerylogo4} alt='gallerylogo4' />
-                <img src={gallerylogo5} alt='gallerylogo5' />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Gallery></Gallery>
+
       {/* Operational */}
       <section className='operational'>
         <div className='container'>
@@ -169,6 +111,128 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Branch Management */}
+      <section className='management'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-md-4'>  
+                <h3 className='side-title'><span>Branch</span> Management</h3>
+                <p className='para-title'>
+                  Allows all of your branches to run smoothly and efficiently using just the one 
+                  platform solution. Empower branch teams with the much-needed support and 
+                  insights to thrive with consistency.
+                </p> 
+            </div>
+            <div className='col-md-4'>
+              <div className='counter-box'> 
+                <p className='title'><span className='counter'>12+</span><span className='icon'><img src={countericon} alt='countericon' /></span></p>
+                <p className='sub-title'>Upcoming Events</p>
+                <ul className='event-list'>
+                  <li>
+                    <p className='event-tile'>Charlotte Birthday is coming</p>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                      <br/>
+                      <span className='post-title'>Manager</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                  <li>
+                    <p className='event-tile'>Charlotte Birthday is coming</p>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                      <br/>
+                      <span className='post-title'>Manager</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                  <li>
+                    <p className='event-tile'>Charlotte Birthday is coming</p>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                      <br/>
+                      <span className='post-title'>Manager</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                </ul>              
+              </div>
+              <div className='counter-box'> 
+                <div>
+                  <p className='title'><span className='counter'>98%</span></p>
+                  <p className='para-title'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.
+                  </p>   
+                </div>         
+              </div>
+            </div>
+            <div className='col-md-4'>
+              <div className='counter-box'> 
+                <p className='title'><span className='counter'>85</span><span className='icon'><img src={countericon} alt='countericon' /></span></p>
+                <p className='sub-title'>Employee Leaves</p>
+                <ul className='event-list leaves-list'>
+                  <li>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                  <li>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                  <li>
+                    <div>                      
+                      <img src={user1} alt='user1' />
+                      <span className='name-title'>More Cafe</span>
+                    </div>
+                    <span className='date'>14 JAN</span>
+                  </li>
+                </ul>              
+              </div>
+              <div className='counter-box'> 
+                <div>
+                  <p className='title'><span className='counter'>10+</span></p>
+                  <p className='para-title'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.
+                  </p>   
+                </div>         
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       {/* Operations Management */}
+      <section className='op-management'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-md-12'>  
+                <h3 className='mian-title'><span>Operations</span> Management</h3>
+                <p className='para-title'>
+                  Eazio offers a simple, user-friendly solution for managing a company's operations, 
+                  increasing efficiency and visibility, whilst driving operational excellence.
+                </p> 
+                <a href="#" className='learn-btn'>Learn more about operations <img src={arrowright} alt='arrowright' /></a>
+            </div>
+            <div className='d-flex stats-box'>
+              <img src={grosssalary} alt='grosssalary' />
+              <img src={jobstatistics} alt='jobstatistics' />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer></Footer>
     </div>
   );
 }

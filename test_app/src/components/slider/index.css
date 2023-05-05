@@ -81,3 +81,10 @@ body{
 .slick-next:before{
     transform: rotate(315deg);
 }
+@media screen and (max-width:768px){
+    .slick-slide img {
+        display: block;
+        max-width: 180px;
+        margin: auto;
+    }
+}

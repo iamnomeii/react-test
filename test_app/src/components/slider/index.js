@@ -17,7 +17,23 @@ function SimpleSlider() {
     centerMode: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings} className='product-slider'>
